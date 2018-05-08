@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sql Mapper -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="board">
+<select id="list" resultType="boardVo" resultMap="boardRM">
+ 		select b.no,b.title,b.content,b.hits,b.time_posted,m.name from spider_board b , spider_member m  where b.id=m.id and b.no between ${startRowNumber} and ${endRowNumber}
+ 	</select>
+ 	
+	<resultMap type="boardVo" id="boardRM">
+		<result column="name" property="memberVo.name"/>
+	</resultMap>
+	
+	<select id="getCount" resultType="int">
+		select count(*) from spider_board
+	</select>
+
+</mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>	
+	<typeAliases>
+		<!-- <typeAlias type="model.MemberVO" alias="memberVO"/>	
+		<typeAlias type="model.DeptVO" alias="deptVO"/>		
+		<typeAlias type="model.EmpVO" alias="EmpVO"/> -->
+		<package name="org.kosta.spider"/>
+		
+	</typeAliases>
+	<mappers>
+ 			<mapper resource="mybatis/config/board.xml"/>	
+ 
+		</mappers>
+</configuration>
