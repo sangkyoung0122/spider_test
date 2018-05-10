@@ -17,6 +17,7 @@ public class BoardController {
   
   public String list(Model model,String nowPage) {
     if(nowPage==null)
+      System.out.println("test1");
       nowPage="1";
     
     System.out.println(nowPage);
