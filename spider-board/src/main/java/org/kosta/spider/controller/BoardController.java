@@ -16,6 +16,7 @@ public class BoardController {
   @RequestMapping("board.do")
   
   public String list(Model model,String nowPage) {
+    System.out.println("test입니다.");
     if(nowPage==null)
       nowPage="1";
     
