@@ -11,7 +11,7 @@ public class HomeController {
 
   @RequestMapping("home.do")
   public String home() {
-    System.out.println("test");
+    System.out.println("test1");
     return "home";
   }
 
